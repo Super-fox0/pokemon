@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeApp">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body class="container-fluid">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">PokeApp</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="pokeSearch">Search</a></li>
+            <li><a ui-sref="pokeBattle">Battle</a></li>
+            <li><a ui-sref="pokeBox">Box</a></li>
+        </ul>
+    </div>
+</nav>
+<div ui-view></div>
+<footer>
+
+</footer>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/ui-router.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <link href="scripts/bootstrap.min.css" rel="stylesheet">
+    <script src="app/app.js"></script>
+    <script src="app/app-state-manager.js"></script>
+
+    <script src="app/services/dal/dal.js"></script>
+    <script src="app/services/dal/pokedal.js"></script>
+
+    <script src="app/services/service/pokeservice.js"></script>
+
+    <script src="app/feature/pokebattle/pokebattle.js"></script>
+    <script src="app/feature/pokebox/pokebox.js"></script>
+    <script src="app/feature/pokesearch/pokesearch.js"></script>
+</body>
+</html>

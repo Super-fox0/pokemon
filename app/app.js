@@ -1,0 +1,1 @@
+var pokeMonApp = angular.module('pokeApp',['ui.router']);
